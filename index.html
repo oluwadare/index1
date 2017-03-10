@@ -1,0 +1,1129 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><link rel="stylesheet" type="text/css" href="css/stylemain.css" /><link rel="stylesheet" type="text/css" href="css/style1.css" /><meta name="google-site-verification" content="XsvSzZ5fr05nmcPbP4-UWvjEn18LcUGah4Ev6vZ6JiI" />
+
+<script src="scripts/jquery-min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".stripped tr:even").css("background-color", "#eeeeee");
+            $(".stripped tr:odd").css("background-color", "#ffffff");
+            //$(".chkBoxSelect").live("click", function () {
+            //    alert('clicked');
+            //    $('.btnRegister').attr("disabled", "disabled");
+            //});
+            $(".chkBoxSelect").click(function() {
+                //alert("Handler for .click() called.");
+                $('.btnRegister').attr("disabled", "disabled");
+            });
+
+            $("#ctl00_ContentPlaceHolder1_btnGenerateRRR").click(function() {
+                //alert("Handler for .click() called.");
+                Console.log('Called');
+                if (disable === false) {
+                    Console.log('Called' + false);
+                    disable = true;
+                    return true;
+                }
+                //$('#ctl00_ContentPlaceHolder1_btnGenerateRRR').attr("disabled", "disabled");
+                setTimeout(
+                    function() {
+                        disable = false;
+                        return false;
+                        //$('#ctl00_ContentPlaceHolder1_btnGenerateRRR').attr("disabled", false);
+                    }, 30000);
+
+                return false;
+            });
+
+            var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+            prm.add_endRequest(function () {
+                $(".stripped tr:even").css("background-color", "#eeeeee");
+                $(".stripped tr:odd").css("background-color", "#ffffff");
+                //alert("Handler for .click() called.");
+                $(".chkBoxSelect").click(function () {
+                    //alert("Handler for .click() called.");
+                    $('.btnRegister').attr("disabled", "disabled");
+                });
+            });
+
+            ShowProgress();
+        });
+
+
+        //var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        //prm.add_endRequest(function () {
+        //    $(".stripped tr:even").css("background-color", "#eeeeee");
+        //    $(".stripped tr:odd").css("background-color", "#ffffff");
+        //    $(".chkBoxSelect").click(function () {
+        //        alert("Handler for .click() called.");
+        //        $('.btnRegister').attr("disabled", "disabled");
+        //    });
+        //});
+
+    </script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23923384-1']);
+  _gaq.push(['_setDomainName', '.noun.edu.ng']);
+  _gaq.push(['_setAllowHash', 'false']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>  
+<style type="text/css" media="print">
+div#MasterDiv {display:none}
+div#print_div {display:block}
+
+
+
+
+</style>  
+    <title>
+	Untitled Page
+
+</title>
+</head>
+<body>
+    
+    
+
+
+<div align="center" id="MasterDiv">
+                      <form name="aspnetForm" method="post" action="StudentProfile.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTcxNTY1NzUzMA9kFgJmD2QWAgIDD2QWAgIDD2QWAgIFD2QWAmYPZBYCAgEPZBYIAgEPDxYCHgRUZXh0BQlGdWxsLVRpbWVkZAIDDw8WAh8AZWRkAgUPDxYCHwAFDG5vdTE0MjI5NDE0NWRkAgcPZBYCAgEPZBYUAgkPEGRkFgECAmQCCw8QZGQWAQIMZAINDxBkZBYBAgtkAg8PEGQPFkICAQICAgMCBAIFAgYCBwIIAgkCCgILAgwCDQIOAg8CEAIRAhICEwIUAhUCFgIXAhgCGQIaAhsCHAIdAh4CHwIgAiECIgIjAiQCJQImAicCKAIpAioCKwIsAi0CLgIvAjACMQIyAjMCNAI1AjYCNwI4AjkCOgI7AjwCPQI+Aj8CQAJBAkIWQhAFBDE5NDAFBDE5NDBnEAUEMTk0MQUEMTk0MWcQBQQxOTQyBQQxOTQyZxAFBDE5NDMFBDE5NDNnEAUEMTk0NAUEMTk0NGcQBQQxOTQ1BQQxOTQ1ZxAFBDE5NDYFBDE5NDZnEAUEMTk0NwUEMTk0N2cQBQQxOTQ4BQQxOTQ4ZxAFBDE5NDkFBDE5NDlnEAUEMTk1MAUEMTk1MGcQBQQxOTUxBQQxOTUxZxAFBDE5NTIFBDE5NTJnEAUEMTk1MwUEMTk1M2cQBQQxOTU0BQQxOTU0ZxAFBDE5NTUFBDE5NTVnEAUEMTk1NgUEMTk1NmcQBQQxOTU3BQQxOTU3ZxAFBDE5NTgFBDE5NThnEAUEMTk1OQUEMTk1OWcQBQQxOTYwBQQxOTYwZxAFBDE5NjEFBDE5NjFnEAUEMTk2MgUEMTk2MmcQBQQxOTYzBQQxOTYzZxAFBDE5NjQFBDE5NjRnEAUEMTk2NQUEMTk2NWcQBQQxOTY2BQQxOTY2ZxAFBDE5NjcFBDE5NjdnEAUEMTk2OAUEMTk2OGcQBQQxOTY5BQQxOTY5ZxAFBDE5NzAFBDE5NzBnEAUEMTk3MQUEMTk3MWcQBQQxOTcyBQQxOTcyZxAFBDE5NzMFBDE5NzNnEAUEMTk3NAUEMTk3NGcQBQQxOTc1BQQxOTc1ZxAFBDE5NzYFBDE5NzZnEAUEMTk3NwUEMTk3N2cQBQQxOTc4BQQxOTc4ZxAFBDE5NzkFBDE5NzlnEAUEMTk4MAUEMTk4MGcQBQQxOTgxBQQxOTgxZxAFBDE5ODIFBDE5ODJnEAUEMTk4MwUEMTk4M2cQBQQxOTg0BQQxOTg0ZxAFBDE5ODUFBDE5ODVnEAUEMTk4NgUEMTk4NmcQBQQxOTg3BQQxOTg3ZxAFBDE5ODgFBDE5ODhnEAUEMTk4OQUEMTk4OWcQBQQxOTkwBQQxOTkwZxAFBDE5OTEFBDE5OTFnEAUEMTk5MgUEMTk5MmcQBQQxOTkzBQQxOTkzZxAFBDE5OTQFBDE5OTRnEAUEMTk5NQUEMTk5NWcQBQQxOTk2BQQxOTk2ZxAFBDE5OTcFBDE5OTdnEAUEMTk5OAUEMTk5OGcQBQQxOTk5BQQxOTk5ZxAFBDIwMDAFBDIwMDBnEAUEMjAwMQUEMjAwMWcQBQQyMDAyBQQyMDAyZxAFBDIwMDMFBDIwMDNnEAUEMjAwNAUEMjAwNGcQBQQyMDA1BQQyMDA1ZxYBAjdkAhUPEGRkFgECHGQCFw8QDxYGHgtfIURhdGFCb3VuZGceDURhdGFUZXh0RmllbGQFBE5BTUUeDkRhdGFWYWx1ZUZpZWxkBQROQU1FZBAVGwotLVNlbGVjdC0tEEFLT0tPLU5PUlRILVdFU1QLQUtPS08tTk9SVEgQQUtPS08tU09VVEgtRUFTVAtBS09LTy1TT1VUSAVBS09LTwtBS1VSRS1OT1JUSAtBS1VSRS1TT1VUSAVBS1VSRQdFU0UtT0RPBklEQU5SRQdJRkVET1JFB0lHQklTSU4FSUtBTEUKSUxBSkUtV0VTVAVJTEFKRRFJTEUtT0xVSkktT0tFSUdCTwVJUkVMRQZPRElHQk8JT0tBIEFLMEtPEU9LSVRJIFBVUEEgSUpVT0RPCk9LSVRJLVBVUEEJT05ETyBXRVNUCU9ORE8tRUFTVARPTkRPA09TRQNPV08VGwAQQUtPS08tTk9SVEgtV0VTVAtBS09LTy1OT1JUSBBBS09LTy1TT1VUSC1FQVNUC0FLT0tPLVNPVVRIBUFLT0tPC0FLVVJFLU5PUlRIC0FLVVJFLVNPVVRIBUFLVVJFB0VTRS1PRE8GSURBTlJFB0lGRURPUkUHSUdCSVNJTgVJS0FMRQpJTEFKRS1XRVNUBUlMQUpFEUlMRS1PTFVKSS1PS0VJR0JPBUlSRUxFBk9ESUdCTwlPS0EgQUswS08RT0tJVEkgUFVQQSBJSlVPRE8KT0tJVEktUFVQQQlPTkRPIFdFU1QJT05ETy1FQVNUBE9ORE8DT1NFA09XTxQrAxtnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIfDxBkZBYBAhxkAiEPEA8WBh8BZx8CBQROQU1FHwMFBE5BTUVkEBUbCi0tU2VsZWN0LS0QQUtPS08tTk9SVEgtV0VTVAtBS09LTy1OT1JUSBBBS09LTy1TT1VUSC1FQVNUC0FLT0tPLVNPVVRIBUFLT0tPC0FLVVJFLU5PUlRIC0FLVVJFLVNPVVRIBUFLVVJFB0VTRS1PRE8GSURBTlJFB0lGRURPUkUHSUdCSVNJTgVJS0FMRQpJTEFKRS1XRVNUBUlMQUpFEUlMRS1PTFVKSS1PS0VJR0JPBUlSRUxFBk9ESUdCTwlPS0EgQUswS08RT0tJVEkgUFVQQSBJSlVPRE8KT0tJVEktUFVQQQlPTkRPIFdFU1QJT05ETy1FQVNUBE9ORE8DT1NFA09XTxUbABBBS09LTy1OT1JUSC1XRVNUC0FLT0tPLU5PUlRIEEFLT0tPLVNPVVRILUVBU1QLQUtPS08tU09VVEgFQUtPS08LQUtVUkUtTk9SVEgLQUtVUkUtU09VVEgFQUtVUkUHRVNFLU9ETwZJREFOUkUHSUZFRE9SRQdJR0JJU0lOBUlLQUxFCklMQUpFLVdFU1QFSUxBSkURSUxFLU9MVUpJLU9LRUlHQk8FSVJFTEUGT0RJR0JPCU9LQSBBSzBLTxFPS0lUSSBQVVBBIElKVU9ETwpPS0lUSS1QVVBBCU9ORE8gV0VTVAlPTkRPLUVBU1QET05ETwNPU0UDT1dPFCsDG2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAikPEGRkFgECHGQCKw8QDxYGHwFnHwIFBE5BTUUfAwUETkFNRWQQFRsKLS1TZWxlY3QtLRBBS09LTy1OT1JUSC1XRVNUC0FLT0tPLU5PUlRIEEFLT0tPLVNPVVRILUVBU1QLQUtPS08tU09VVEgFQUtPS08LQUtVUkUtTk9SVEgLQUtVUkUtU09VVEgFQUtVUkUHRVNFLU9ETwZJREFOUkUHSUZFRE9SRQdJR0JJU0lOBUlLQUxFCklMQUpFLVdFU1QFSUxBSkURSUxFLU9MVUpJLU9LRUlHQk8FSVJFTEUGT0RJR0JPCU9LQSBBSzBLTxFPS0lUSSBQVVBBIElKVU9ETwpPS0lUSS1QVVBBCU9ORE8gV0VTVAlPTkRPLUVBU1QET05ETwNPU0UDT1dPFRsAEEFLT0tPLU5PUlRILVdFU1QLQUtPS08tTk9SVEgQQUtPS08tU09VVEgtRUFTVAtBS09LTy1TT1VUSAVBS09LTwtBS1VSRS1OT1JUSAtBS1VSRS1TT1VUSAVBS1VSRQdFU0UtT0RPBklEQU5SRQdJRkVET1JFB0lHQklTSU4FSUtBTEUKSUxBSkUtV0VTVAVJTEFKRRFJTEUtT0xVSkktT0tFSUdCTwVJUkVMRQZPRElHQk8JT0tBIEFLMEtPEU9LSVRJIFBVUEEgSUpVT0RPCk9LSVRJLVBVUEEJT05ETyBXRVNUCU9ORE8tRUFTVARPTkRPA09TRQNPV08UKwMbZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZGRk9N+yvWvYAdT434+vH+1SZHLtDNc=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+<script src="/WebResource.axd?d=3Q4GkhajKv-ecQXtzgmVePM-2WM06Wun5quLL4EIJog-FkkQGwM-aT9IjErJ2-DNVM18yR0fXw4S-hKoPTTNrhTY9OE1&amp;t=635199056332401351" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=n6__W1XYCiy6ntUMPRfJiBa3a6C9nfiT2u0E4ubLjQyZrrGjap8t1snNI_SLSfoRR7WnmaGgAIiljHujvBBzt8LaQNOUA6jpDwB-zn4iL5dRV0O0b6TN5Zo_v_1fcDufYVtbIEBQWphYiuFFrpPPLFs7I2tw4VNcQp-2CKCpvvj8Qhu40&amp;t=ffffffffbcb9b94a" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=fMDUiTmeFJtPKdyz1RP26LO0044of_69HKXKcNF-GIzo6tX7g5967UTu7XVvO2RHt5qR32gykBRdDwBVpo-W-iW1PV9JR3kn4MABvu-PkanVYn2xs9EYBmMANRjaEDkNc80i66DHIosE7Ucx-lx5GGPRVRxxJN3Wyvlgv7_afRX0lxGp0&amp;t=ffffffffbcb9b94a" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="929">
+    <!-- fwtable fwsrc="templatemain.png" fwpage="Page 1" fwbase="templatemain.gif" fwstyle="Dreamweaver" fwdocid = "1559416576" fwnested="0" -->
+    <tr>
+      <td><img src="images/spacer.gif" width="22" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="24" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="26" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="44" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="224" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="29" height="1" border="0" alt="" /></td>
+
+      <td><img src="images/spacer.gif" width="21" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="462" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="30" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="27" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="15" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="5" height="1" border="0" alt="" /></td>
+      <td><img src="images/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+    </tr>
+    <tr>
+
+      <td colspan="2"><img name="templatemain_r1_c1" src="images/templatemain_r1_c1.gif" width="46" height="14" border="0" id="templatemain_r1_c1" alt="" /></td>
+      <td colspan="3" class="toprepline1"><img name="templatemain_r1_c3" src="images/templatemain_r1_c3.gif" width="294" height="14" border="0" id="templatemain_r1_c3" alt="" /></td>
+      <td colspan="7"><img name="templatemain_r1_c6" src="images/templatemain_r1_c6.gif" width="589" height="14" border="0" id="templatemain_r1_c6" alt="" /></td>
+      <td><img src="images/spacer.gif" width="1" height="14" border="0" alt="" /></td>
+    </tr>
+    <tr>
+      <td colspan="2"><img name="leftTopcurve1" src="images/leftTopcurve1.gif" width="46" height="73" border="0" id="leftTopcurve1" alt="" /></td>
+      <td colspan="3"><img name="templatemain_r2_c3" src="images/templatemain_r2_c3.gif" width="294" height="73" border="0" id="templatemain_r2_c3" alt="" /></td>
+      <td colspan="4" 
+            style="background-image:url(images/staticTopbarimage1.gif); background-repeat:no-repeat" 
+            align="right">
+
+            <a href="http://www.nou.edu.ng" 
+              style="color:White; text-decoration:none">NOUN Home &nbsp;</a>
+                     <a href="StudentControlCenter.aspx" 
+              style="color:White; text-decoration:none">My Home</a>&nbsp;|&nbsp;<a href="feedbackform.aspx" 
+              style="color:White; text-decoration:none">Need Help? Contact Us</a>&nbsp;| 
+                     <a href="Logout.aspx" 
+              style="color:White; text-decoration:none">Logout</a>&nbsp; 
+        </td>
+      <td colspan="2"><img name="topbarRightrepeat1" src="images/topbarRightrepeat1.gif" width="42" height="73" border="0" id="topbarRightrepeat1" alt="" /></td>
+      <td rowspan="7" style="background:images/templatemain_r2_c12.gif no-repeat"></td>
+      <td><img src="images/spacer.gif" width="1" height="73" border="0" alt="" /></td>
+
+    </tr>
+    <tr>
+      <td class="sidereplineleft1-1">&nbsp;</td>
+      <td colspan="9" rowspan="3" valign="top">
+          <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$ContentPlaceHolder1$UpdatePanel1'], [], [], 90);
+//]]>
+</script>
+
+                          
+
+    
+  <div id="ctl00_ContentPlaceHolder1_UpdateProgress1" style="display:none;">
+	
+        Processing ..... Please Wait
+    <script type="text/javascript">     document.write("<div class='UpdateProgressBackground'></div>");</script>
+
+                <center><div class="UpdateProgressContent">Processing ..... Please Wait</div></center>        
+    
+</div>
+  <div>
+    <table >
+            <tr>
+                <td>
+                            
+                
+                </td>
+            </tr>    
+    </table>
+
+  </div>
+    <div id="ctl00_ContentPlaceHolder1_UpdatePanel1">
+	
+    
+    <div>
+                  <div id="ctl00_ContentPlaceHolder1_pnlShow">
+		
+       <table class="style1">
+
+            <tr>
+                <td>
+                    
+                    <table align="center" class="style21">
+
+                        <tr>
+                            <td>
+                    
+                    <table align="center" class="style2">
+                        <tr>
+                            <td style="text-align: center; font-family:Times New Roman; font-size:15px">
+                                &nbsp;</td>
+                            <td style="text-align: left; font-family:Times New Roman; font-size:22px; border-bottom:dashed 1px gray">
+                                <b>Student Data Page</b></td>
+
+                            <td align="right" >
+                                <i>2010/2011 Session</i></td>
+                        </tr>
+                        <tr>
+                            <td >
+                                &nbsp;</td>
+                            <td colspan="2">
+                                &nbsp;</td>
+
+                        </tr>
+                        <tr>
+                            <td >
+                                &nbsp;</td>
+                            <td align="left" class="colorheader" colspan="2">
+                                Important Notice</td>
+                        </tr>
+                        <tr>
+
+                            <td >
+                                &nbsp;</td>
+                            <td colspan="2" class="smalltext">
+                                1. All &nbsp;information required must be carefully filled on this form.<br />                                
+                                2. Information mark <em style =" color :Red ">*</em>  are compulsory
+                                </td>
+                        </tr>
+
+                        <tr>
+                            <td class="style41" >
+                                </td>
+                            <td colspan="2" class="style41">
+                                
+                                </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                &nbsp;</td>
+
+                            <td colspan="2">
+                                <table align="center" class="tablecredential">
+                                    <tr>
+                                        <td class="style42">
+                                            <b>Programme Category</b></td>
+                                        <td class="style42">
+                                            <b>Matric Number</b></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <span id="ctl00_ContentPlaceHolder1_lblsch"></span>
+                                        </td>
+                                        <td>
+                                            <span id="ctl00_ContentPlaceHolder1_lblmatno">nou142294145</span>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                                                                              </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                &nbsp;</td>
+                            <td colspan="2">
+                                &nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td >
+                                &nbsp;</td>
+                            <td colspan="2">
+                            
+                            <div id="appForm">
+                                <div id="ctl00_ContentPlaceHolder1_pnlAppform">
+			
+                                    <div id ="Page1" style="display: block">
+                                        <div id="ctl00_ContentPlaceHolder1_pnlPage1">
+				
+                                           
+                                            <br />
+
+                                            <table class="style1">
+                                                <tr>
+                                                    <td class="blackheader">
+                                                        PERSONAL PARTICULARS:</td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                        <table cellpadding="2" cellspacing="2" class="tablepersonal">
+
+                                                            <tr>
+                                                                <td class="style28" colspan="3">
+                                                                    &nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Title <em style =" color :Red ">*</em></td>
+                                                                <td colspan="2">
+
+                                                                    
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtTitle" type="text" value="MISS" id="ctl00_ContentPlaceHolder1_txtTitle" class="text-normal" style="width:181px;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Surname <em style =" color :Red">*</em></td>
+                                                                <td colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtSurname" type="text" value="OLOJIDO" id="ctl00_ContentPlaceHolder1_txtSurname" class="text-normal" style="width:289px;" />
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Othernames <em style =" color :Red ">*</em></td>
+                                                                <td colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtOthernames" type="text" value="TOLULOPE ELIZABETH" id="ctl00_ContentPlaceHolder1_txtOthernames" class="text-normal" style="width:376px;" />
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Maiden name (If married Female)</td>
+                                                                <td class="style27" colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtMaiden" type="text" id="ctl00_ContentPlaceHolder1_txtMaiden" class="text-normal" style="width:153px;" />
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Sex <em style =" color :Red ">*</em></td>
+                                                                <td colspan="2">
+                                                                    <select name="ctl00$ContentPlaceHolder1$cmbSex" id="ctl00_ContentPlaceHolder1_cmbSex" disabled="disabled">
+					<option value=""></option>
+					<option value="M">Male</option>
+
+					<option selected="selected" value="F">Female</option>
+
+				</select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Date of Birth <em style =" color :Red ">*</em></td>
+
+                                                                <td colspan="2">
+                                                                    <select name="ctl00$ContentPlaceHolder1$cmbDay" id="ctl00_ContentPlaceHolder1_cmbDay" disabled="disabled">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+
+					<option value="11">11</option>
+					<option selected="selected" value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+
+				</select>
+                                                                    &nbsp;<select name="ctl00$ContentPlaceHolder1$cmdMonth" id="ctl00_ContentPlaceHolder1_cmdMonth" disabled="disabled">
+					<option value=""></option>
+					<option value="01">Jan</option>
+
+					<option value="02">Feb</option>
+					<option value="03">Mar</option>
+					<option value="04">Apr</option>
+					<option value="05">May</option>
+					<option value="06">Jun</option>
+					<option value="07">Jul</option>
+
+					<option value="08">Aug</option>
+					<option value="09">Sep</option>
+					<option value="10">Oct</option>
+					<option selected="selected" value="11">Nov</option>
+					<option value="12">Dec</option>
+
+				</select>
+
+                                                                    &nbsp;<select name="ctl00$ContentPlaceHolder1$cmbYear" id="ctl00_ContentPlaceHolder1_cmbYear" disabled="disabled">
+					<option value=""></option>
+					<option value="1940">1940</option>
+					<option value="1941">1941</option>
+					<option value="1942">1942</option>
+					<option value="1943">1943</option>
+					<option value="1944">1944</option>
+
+					<option value="1945">1945</option>
+					<option value="1946">1946</option>
+					<option value="1947">1947</option>
+					<option value="1948">1948</option>
+					<option value="1949">1949</option>
+					<option value="1950">1950</option>
+
+					<option value="1951">1951</option>
+					<option value="1952">1952</option>
+					<option value="1953">1953</option>
+					<option value="1954">1954</option>
+					<option value="1955">1955</option>
+					<option value="1956">1956</option>
+
+					<option value="1957">1957</option>
+					<option value="1958">1958</option>
+					<option value="1959">1959</option>
+					<option value="1960">1960</option>
+					<option value="1961">1961</option>
+					<option value="1962">1962</option>
+
+					<option value="1963">1963</option>
+					<option value="1964">1964</option>
+					<option value="1965">1965</option>
+					<option value="1966">1966</option>
+					<option value="1967">1967</option>
+					<option value="1968">1968</option>
+
+					<option value="1969">1969</option>
+					<option value="1970">1970</option>
+					<option value="1971">1971</option>
+					<option value="1972">1972</option>
+					<option value="1973">1973</option>
+					<option value="1974">1974</option>
+
+					<option value="1975">1975</option>
+					<option value="1976">1976</option>
+					<option value="1977">1977</option>
+					<option value="1978">1978</option>
+					<option value="1979">1979</option>
+					<option value="1980">1980</option>
+
+					<option value="1981">1981</option>
+					<option value="1982">1982</option>
+					<option value="1983">1983</option>
+					<option value="1984">1984</option>
+					<option value="1985">1985</option>
+					<option value="1986">1986</option>
+
+					<option value="1987">1987</option>
+					<option value="1988">1988</option>
+					<option value="1989">1989</option>
+					<option value="1990">1990</option>
+					<option value="1991">1991</option>
+					<option value="1992">1992</option>
+
+					<option value="1993">1993</option>
+					<option selected="selected" value="1994">1994</option>
+					<option value="1995">1995</option>
+					<option value="1996">1996</option>
+					<option value="1997">1997</option>
+					<option value="1998">1998</option>
+
+					<option value="1999">1999</option>
+					<option value="2000">2000</option>
+					<option value="2001">2001</option>
+					<option value="2002">2002</option>
+					<option value="2003">2003</option>
+					<option value="2004">2004</option>
+
+					<option value="2005">2005</option>
+
+				</select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Marital Status</td>
+
+                                                                <td>
+                                                                    <select name="ctl00$ContentPlaceHolder1$cmbMarital" id="ctl00_ContentPlaceHolder1_cmbMarital">
+					<option selected="selected" value="S">Single</option>
+					<option value="M">Married</option>
+					<option value="W">Widowed</option>
+					<option value="D">Divorced</option>
+
+				</select>
+                                                                </td>
+                                                                <td>
+                                                                    &nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Nationality <em style =" color :Red ">*</em></td>
+
+                                                                <td colspan="2">
+                                                                    <select name="ctl00$ContentPlaceHolder1$cmbNation" id="ctl00_ContentPlaceHolder1_cmbNation">
+					<option selected="selected" value="Nigerian">Nigerian</option>
+					<option value="Non-Nigerian">Non-Nigerian</option>
+
+				</select>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="style29">
+                                                                    State</td>
+                                                                <td class="style30" colspan="2">
+                                                                    <select name="ctl00$ContentPlaceHolder1$cmbState" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$cmbState\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_cmbState">
+					<option value="Select">Select</option>
+					<option value="ABIA">ABIA</option>
+
+					<option value="ADAMAWA">ADAMAWA</option>
+					<option value="ANAMBRA">ANAMBRA</option>
+					<option value="AKWA IBOM">AKWA IBOM</option>
+					<option value="BAUCHI">BAUCHI</option>
+					<option value="BAYELSA">BAYELSA</option>
+					<option value="BENUE">BENUE</option>
+
+					<option value="BORNO">BORNO</option>
+					<option value="CROSS RIVER">CROSS RIVER</option>
+					<option value="DELTA">DELTA</option>
+					<option value="EBONYI">EBONYI</option>
+					<option value="EDO">EDO</option>
+					<option value="EKITI">EKITI</option>
+
+					<option value="ENUGU">ENUGU</option>
+					<option value="GOMBE">GOMBE</option>
+					<option value="IMO">IMO</option>
+					<option value="JIGAWA">JIGAWA</option>
+					<option value="KADUNA">KADUNA</option>
+					<option value="KANO">KANO</option>
+
+					<option value="KATSINA">KATSINA</option>
+					<option value="KEBBI">KEBBI</option>
+					<option value="KOGI">KOGI</option>
+					<option value="KWARA">KWARA</option>
+					<option value="LAGOS">LAGOS</option>
+					<option value="NASSARAWA">NASSARAWA</option>
+
+					<option value="NIGER">NIGER</option>
+					<option value="OGUN">OGUN</option>
+					<option selected="selected" value="ONDO">ONDO</option>
+					<option value="OSUN">OSUN</option>
+					<option value="OYO">OYO</option>
+					<option value="PLATEAU">PLATEAU</option>
+
+					<option value="RIVERS">RIVERS</option>
+					<option value="SOKOTO">SOKOTO</option>
+					<option value="TARABA">TARABA</option>
+					<option value="YOBE">YOBE</option>
+					<option value="ZAMFARA">ZAMFARA</option>
+					<option value="ABUJA">ABUJA</option>
+
+				</select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Local Govt. Area</td>
+                                                                <td colspan="2">
+                                                                    <select name="ctl00$ContentPlaceHolder1$cmbLGA" id="ctl00_ContentPlaceHolder1_cmbLGA">
+
+					<option value="">--Select--</option>
+					<option value="AKOKO-NORTH-WEST">AKOKO-NORTH-WEST</option>
+					<option value="AKOKO-NORTH">AKOKO-NORTH</option>
+					<option value="AKOKO-SOUTH-EAST">AKOKO-SOUTH-EAST</option>
+					<option value="AKOKO-SOUTH">AKOKO-SOUTH</option>
+					<option value="AKOKO">AKOKO</option>
+
+					<option value="AKURE-NORTH">AKURE-NORTH</option>
+					<option selected="selected" value="AKURE-SOUTH">AKURE-SOUTH</option>
+					<option value="AKURE">AKURE</option>
+					<option value="ESE-ODO">ESE-ODO</option>
+					<option value="IDANRE">IDANRE</option>
+					<option value="IFEDORE">IFEDORE</option>
+
+					<option value="IGBISIN">IGBISIN</option>
+					<option value="IKALE">IKALE</option>
+					<option value="ILAJE-WEST">ILAJE-WEST</option>
+					<option value="ILAJE">ILAJE</option>
+					<option value="ILE-OLUJI-OKEIGBO">ILE-OLUJI-OKEIGBO</option>
+					<option value="IRELE">IRELE</option>
+
+					<option value="ODIGBO">ODIGBO</option>
+					<option value="OKA AK0KO">OKA AK0KO</option>
+					<option value="OKITI PUPA IJUODO">OKITI PUPA IJUODO</option>
+					<option value="OKITI-PUPA">OKITI-PUPA</option>
+					<option value="ONDO WEST">ONDO WEST</option>
+					<option value="ONDO-EAST">ONDO-EAST</option>
+
+					<option value="ONDO">ONDO</option>
+					<option value="OSE">OSE</option>
+					<option value="OWO">OWO</option>
+
+				</select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td class="style28">
+                                                                    Home Town</td>
+                                                                <td colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtHomeTwn" type="text" id="ctl00_ContentPlaceHolder1_txtHomeTwn" class="text-normal" style="width:153px;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+
+                                                                    &nbsp;</td>
+                                                                <td colspan="2">
+                                                                    &nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style34">
+                                                                    &nbsp;</td>
+                                                                <td class="style35" colspan="2">
+                                                                    &nbsp;</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style34" colspan="3">
+                                                                    <table cellpadding="2" cellspacing="2" class="tablepersonal">
+                                                                        <tr>
+                                                                            <td class="style34">
+                                                                                CONTACT INFORMATION (PLACE OF RESIDENCE)</td>
+                                                                            <td class="style35" colspan="3">
+
+                                                                                &nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="style34">
+                                                                                Home Address <em style =" color :Red ">*</em></td>
+                                                                            <td class="style35" colspan="3">
+                                                                                <textarea name="ctl00$ContentPlaceHolder1$txtAddress" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_txtAddress" class="text-normal" style="height:44px;width:357px;">NO1 ALO STREET AYEDUN, AKURE</textarea>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="style34">
+                                                                                Town</td>
+                                                                            <td class="style35" colspan="3">
+                                                                                <input name="ctl00$ContentPlaceHolder1$txtPostTwn" type="text" value="AKURE" id="ctl00_ContentPlaceHolder1_txtPostTwn" class="text-normal" style="width:153px;" />
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="style28">
+                                                                                State</td>
+                                                                            <td class="style43">
+                                                                                <select name="ctl00$ContentPlaceHolder1$ddlPostState" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlPostState\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_ddlPostState">
+					<option value="Select">Select</option>
+					<option value="ABIA">ABIA</option>
+
+					<option value="ADAMAWA">ADAMAWA</option>
+					<option value="ANAMBRA">ANAMBRA</option>
+					<option value="AKWA IBOM">AKWA IBOM</option>
+					<option value="BAUCHI">BAUCHI</option>
+					<option value="BAYELSA">BAYELSA</option>
+					<option value="BENUE">BENUE</option>
+
+					<option value="BORNO">BORNO</option>
+					<option value="CROSS RIVER">CROSS RIVER</option>
+					<option value="DELTA">DELTA</option>
+					<option value="EBONYI">EBONYI</option>
+					<option value="EDO">EDO</option>
+					<option value="EKITI">EKITI</option>
+
+					<option value="ENUGU">ENUGU</option>
+					<option value="GOMBE">GOMBE</option>
+					<option value="IMO">IMO</option>
+					<option value="JIGAWA">JIGAWA</option>
+					<option value="KADUNA">KADUNA</option>
+					<option value="KANO">KANO</option>
+
+					<option value="KATSINA">KATSINA</option>
+					<option value="KEBBI">KEBBI</option>
+					<option value="KOGI">KOGI</option>
+					<option value="KWARA">KWARA</option>
+					<option value="LAGOS">LAGOS</option>
+					<option value="NASSARAWA">NASSARAWA</option>
+
+					<option value="NIGER">NIGER</option>
+					<option value="OGUN">OGUN</option>
+					<option selected="selected" value="ONDO">ONDO</option>
+					<option value="OSUN">OSUN</option>
+					<option value="OYO">OYO</option>
+					<option value="PLATEAU">PLATEAU</option>
+
+					<option value="RIVERS">RIVERS</option>
+					<option value="SOKOTO">SOKOTO</option>
+					<option value="TARABA">TARABA</option>
+					<option value="YOBE">YOBE</option>
+					<option value="ZAMFARA">ZAMFARA</option>
+					<option value="ABUJA">ABUJA</option>
+
+				</select>
+                                                                            
+
+                                                                            </td>
+                                                                            <td class="style44">
+                                                                                Local Govt. Area </td>
+                                                                            <td>
+                                                                                <select name="ctl00$ContentPlaceHolder1$ddlPostLga" id="ctl00_ContentPlaceHolder1_ddlPostLga">
+					<option value="">--Select--</option>
+
+					<option value="AKOKO-NORTH-WEST">AKOKO-NORTH-WEST</option>
+					<option value="AKOKO-NORTH">AKOKO-NORTH</option>
+					<option value="AKOKO-SOUTH-EAST">AKOKO-SOUTH-EAST</option>
+					<option value="AKOKO-SOUTH">AKOKO-SOUTH</option>
+					<option value="AKOKO">AKOKO</option>
+					<option value="AKURE-NORTH">AKURE-NORTH</option>
+
+					<option selected="selected" value="AKURE-SOUTH">AKURE-SOUTH</option>
+					<option value="AKURE">AKURE</option>
+					<option value="ESE-ODO">ESE-ODO</option>
+					<option value="IDANRE">IDANRE</option>
+					<option value="IFEDORE">IFEDORE</option>
+					<option value="IGBISIN">IGBISIN</option>
+
+					<option value="IKALE">IKALE</option>
+					<option value="ILAJE-WEST">ILAJE-WEST</option>
+					<option value="ILAJE">ILAJE</option>
+					<option value="ILE-OLUJI-OKEIGBO">ILE-OLUJI-OKEIGBO</option>
+					<option value="IRELE">IRELE</option>
+					<option value="ODIGBO">ODIGBO</option>
+
+					<option value="OKA AK0KO">OKA AK0KO</option>
+					<option value="OKITI PUPA IJUODO">OKITI PUPA IJUODO</option>
+					<option value="OKITI-PUPA">OKITI-PUPA</option>
+					<option value="ONDO WEST">ONDO WEST</option>
+					<option value="ONDO-EAST">ONDO-EAST</option>
+					<option value="ONDO">ONDO</option>
+
+					<option value="OSE">OSE</option>
+					<option value="OWO">OWO</option>
+
+				</select>                                                                            
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="style34">
+                                                                                Country</td>
+
+                                                                            <td class="style35" colspan="3">
+                                                                                <select name="ctl00$ContentPlaceHolder1$ddlPostCountry" id="ctl00_ContentPlaceHolder1_ddlPostCountry">
+					<option selected="selected" value="Nigerian">Nigerian</option>
+					<option value="Non-Nigerian">Non-Nigerian</option>
+
+				</select>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td class="style34">
+                                                                                CONTACT INFORMATION (POSTAL ADDRESS)</td>
+                                                                            <td class="style35" colspan="3">
+                                                                                &nbsp;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="style34">
+
+                                                                                &nbsp;Address</td>
+                                                                            <td class="style35" colspan="3">
+                                                                                <textarea name="ctl00$ContentPlaceHolder1$txtCorAddress" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_txtCorAddress" class="text-normal" style="height:35px;width:357px;">NO 19 ADEOLU STREET AYEDUN, AKURE</textarea>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="style34">
+                                                                                Town</td>
+
+                                                                            <td class="style35" colspan="3">
+                                                                                <input name="ctl00$ContentPlaceHolder1$txtConTown" type="text" value="AKURE" id="ctl00_ContentPlaceHolder1_txtConTown" class="text-normal" style="width:153px;" />
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="style28">
+                                                                                State</td>
+                                                                            <td class="style43">
+
+                                                                                <select name="ctl00$ContentPlaceHolder1$ddlCorState" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$ddlCorState\',\'\')', 0)" id="ctl00_ContentPlaceHolder1_ddlCorState">
+					<option value="Select">Select</option>
+					<option value="ABIA">ABIA</option>
+					<option value="ADAMAWA">ADAMAWA</option>
+					<option value="ANAMBRA">ANAMBRA</option>
+					<option value="AKWA IBOM">AKWA IBOM</option>
+
+					<option value="BAUCHI">BAUCHI</option>
+					<option value="BAYELSA">BAYELSA</option>
+					<option value="BENUE">BENUE</option>
+					<option value="BORNO">BORNO</option>
+					<option value="CROSS RIVER">CROSS RIVER</option>
+					<option value="DELTA">DELTA</option>
+
+					<option value="EBONYI">EBONYI</option>
+					<option value="EDO">EDO</option>
+					<option value="EKITI">EKITI</option>
+					<option value="ENUGU">ENUGU</option>
+					<option value="GOMBE">GOMBE</option>
+					<option value="IMO">IMO</option>
+
+					<option value="JIGAWA">JIGAWA</option>
+					<option value="KADUNA">KADUNA</option>
+					<option value="KANO">KANO</option>
+					<option value="KATSINA">KATSINA</option>
+					<option value="KEBBI">KEBBI</option>
+					<option value="KOGI">KOGI</option>
+
+					<option value="KWARA">KWARA</option>
+					<option value="LAGOS">LAGOS</option>
+					<option value="NASSARAWA">NASSARAWA</option>
+					<option value="NIGER">NIGER</option>
+					<option value="OGUN">OGUN</option>
+					<option selected="selected" value="ONDO">ONDO</option>
+
+					<option value="OSUN">OSUN</option>
+					<option value="OYO">OYO</option>
+					<option value="PLATEAU">PLATEAU</option>
+					<option value="RIVERS">RIVERS</option>
+					<option value="SOKOTO">SOKOTO</option>
+					<option value="TARABA">TARABA</option>
+
+					<option value="YOBE">YOBE</option>
+					<option value="ZAMFARA">ZAMFARA</option>
+					<option value="ABUJA">ABUJA</option>
+
+				</select>
+                                                                            </td>
+                                                                            <td class="style44">
+                                                                               Local Govt. Area</td>
+
+                                                                            <td>
+                                                                                <select name="ctl00$ContentPlaceHolder1$ddlConLga" id="ctl00_ContentPlaceHolder1_ddlConLga">
+					<option value="">--Select--</option>
+					<option value="AKOKO-NORTH-WEST">AKOKO-NORTH-WEST</option>
+					<option value="AKOKO-NORTH">AKOKO-NORTH</option>
+					<option value="AKOKO-SOUTH-EAST">AKOKO-SOUTH-EAST</option>
+					<option value="AKOKO-SOUTH">AKOKO-SOUTH</option>
+
+					<option value="AKOKO">AKOKO</option>
+					<option value="AKURE-NORTH">AKURE-NORTH</option>
+					<option selected="selected" value="AKURE-SOUTH">AKURE-SOUTH</option>
+					<option value="AKURE">AKURE</option>
+					<option value="ESE-ODO">ESE-ODO</option>
+					<option value="IDANRE">IDANRE</option>
+
+					<option value="IFEDORE">IFEDORE</option>
+					<option value="IGBISIN">IGBISIN</option>
+					<option value="IKALE">IKALE</option>
+					<option value="ILAJE-WEST">ILAJE-WEST</option>
+					<option value="ILAJE">ILAJE</option>
+					<option value="ILE-OLUJI-OKEIGBO">ILE-OLUJI-OKEIGBO</option>
+
+					<option value="IRELE">IRELE</option>
+					<option value="ODIGBO">ODIGBO</option>
+					<option value="OKA AK0KO">OKA AK0KO</option>
+					<option value="OKITI PUPA IJUODO">OKITI PUPA IJUODO</option>
+					<option value="OKITI-PUPA">OKITI-PUPA</option>
+					<option value="ONDO WEST">ONDO WEST</option>
+
+					<option value="ONDO-EAST">ONDO-EAST</option>
+					<option value="ONDO">ONDO</option>
+					<option value="OSE">OSE</option>
+					<option value="OWO">OWO</option>
+
+				</select>
+                                                                                
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="style34">
+                                                                                Country</td>
+                                                                            <td class="style35" colspan="3">
+                                                                                <select name="ctl00$ContentPlaceHolder1$ddlCorCountry" id="ctl00_ContentPlaceHolder1_ddlCorCountry">
+					<option selected="selected" value="Nigerian">Nigerian</option>
+					<option value="Non-Nigerian">Non-Nigerian</option>
+
+				</select>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style34">
+
+                                                                    Email Address</td>
+                                                                <td class="style35" colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtEmail" type="text" value="OSAMUELCHARLES@YAHOO.COM" id="ctl00_ContentPlaceHolder1_txtEmail" class="text-normal" style="width:162px;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Phone Number <em style =" color :Red ">*</em></td>
+
+                                                                <td colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtPhone" type="text" value="08143050348" id="ctl00_ContentPlaceHolder1_txtPhone" class="text-normal" style="width:127px;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Physical Challenge</td>
+                                                                <td colspan="2">
+
+                                                                    <select name="ctl00$ContentPlaceHolder1$cmbPhyChal" id="ctl00_ContentPlaceHolder1_cmbPhyChal">
+					<option value="None">None</option>
+					<option value="Deaf">Deaf</option>
+					<option value="Blind">Blind</option>
+					<option value="Dump">Dump</option>
+
+				</select>
+
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style32">
+                                                                    NEXT OF KIN</td>
+                                                                <td class="style33" colspan="2">
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Name <em style =" color :Red ">*</em></td>
+                                                                <td colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtNkinName" type="text" value="OLOJIDO TOLULOPE ELIZABETH" id="ctl00_ContentPlaceHolder1_txtNkinName" class="text-normal" style="width:279px;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td class="style28">
+                                                                    Address <em style =" color :Red ">*</em></td>
+                                                                <td colspan="2">
+                                                                    <textarea name="ctl00$ContentPlaceHolder1$txtSponsorAdd" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_txtSponsorAdd" class="text-normal" style="height:66px;width:357px;">NO 19 ADEOLU STREET AYEDUN, AKURE</textarea>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td class="style28">
+                                                                    Email Address</td>
+                                                                <td colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtNkinEmail" type="text" id="ctl00_ContentPlaceHolder1_txtNkinEmail" class="text-normal" style="width:171px;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+
+                                                                    Phone No <em style =" color :Red ">*</em></td>
+                                                                <td colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtNkinPhone" type="text" id="ctl00_ContentPlaceHolder1_txtNkinPhone" class="text-normal" style="width:126px;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    Relationship</td>
+
+                                                                <td colspan="2">
+                                                                    <input name="ctl00$ContentPlaceHolder1$txtNkinPhone0" type="text" id="ctl00_ContentPlaceHolder1_txtNkinPhone0" class="text-normal" style="width:126px;" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    &nbsp;</td>
+                                                                <td colspan="2">
+                                                                    &nbsp;</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+                                                                    &nbsp;</td>
+                                                                <td colspan="2">
+                                                                     
+                                                                                                                          &nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="style28">
+
+                                                                    &nbsp;</td>
+                                                                <td colspan="2">
+                                                                    <input type="submit" name="ctl00$ContentPlaceHolder1$btnPg1Next" value="Update " id="ctl00_ContentPlaceHolder1_btnPg1Next" />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            
+			</div>
+                                    </div>
+                                    
+                                    <div id ="Page2" style="display: block">
+                                    
+                                    </div>
+                                    <div id="Page31" style =" display :block">
+                                    </div>
+                                    <div id ="pnlPage3" style="display: block" >
+                                    
+                                    </div>
+                                    
+                                
+		</div>
+
+                            </div>
+                           
+                             </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                &nbsp;</td></tr></table></td></tr></table></td>
+              
+             </tr>
+             
+             </table> 
+            
+	</div>
+
+             </div>
+  
+</div> 
+
+          </td>
+      <td rowspan="2" class="sidereplineRight1-1">&nbsp;</td>
+      <td><img src="images/spacer.gif" width="1" height="16" border="0" alt="" /></td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="sidereplineleft1-1">&nbsp;</td>
+      <td><img src="images/spacer.gif" width="1" height="67" border="0" alt="" /></td>
+
+    </tr>
+    <tr>
+      <td class="sidereplineRight1-1">&nbsp;</td>
+      <td><img src="images/spacer.gif" width="1" height="302" border="0" alt="" /></td>
+    </tr>
+    <tr>
+      <td colspan="11" style="background-image:url(images/template1_r6_c11.gif); background-repeat:no-repeat; text-align="center">
+          </td>
+      <td><img src="images/spacer.gif" width="1" height="40" border="0" alt="" /></td>
+
+    </tr>
+    <tr>
+      <td colspan="3"><img name="LeftbottomCurve1" src="images/LeftbottomCurve1.gif" width="72" height="50" border="0" id="LeftbottomCurve1" alt="" /></td>
+      <td><img name="centerbottombarshort1" src="images/centerbottombarshort1.gif" width="44" height="50" border="0" id="centerbottombarshort1" alt="" /></td>
+      <td colspan="4"><img name="centerbottombarLong1" src="images/centerbottombarLong1.gif" width="736" height="50" border="0" id="centerbottombarLong1" alt="" /></td>
+      <td colspan="3"><img name="rightbottomCurve1" src="images/rightbottomCurve1.gif" width="72" height="50" border="0" id="rightbottomCurve1" alt="" /></td>
+      <td><img src="images/spacer.gif" width="1" height="50" border="0" alt="" /></td>
+    </tr>
+    <tr>
+
+      <td colspan="11"><img name="templatemain_r8_c1" src="images/templatemain_r8_c1.gif" width="924" height="9" border="0" id="templatemain_r8_c1" alt="" /></td>
+      <td><img src="images/spacer.gif" width="1" height="9" border="0" alt="" /></td>
+    </tr>
+  </table>
+                      
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":2000,"dynamicLayout":true}, null, null, $get("ctl00_ContentPlaceHolder1_UpdateProgress1"));
+});
+//]]>
+</script>
+</form>
+</div>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" style="height: 200px;" class="footerbg">
+        <tr>
+          <td align="center" style="padding-top: 135px;"><font face="Trebuchet MS, Arial, Helvetica, sans-serif" size="-1" color="#FFFFFF">
+
+              For technical queries, send Email to support@noun.edu.ng</font&gt><span style=""></span></td>
+            <td style="text-align: right; padding-right: 100px;"><a href="http://www.cyberspace.net.ng" class="cyblink">Powered by  
+                <img src="images/cyb_logo2.png" alt="Cyberspace Logo" style="height: 150px;"/></a></td>
+        </tr>
+    </table>
+</body>
+</html>
